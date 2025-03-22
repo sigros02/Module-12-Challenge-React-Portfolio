@@ -31,6 +31,32 @@ function Portfolio() {
                 </div>
               </div>
             </div>
+            <div className="row">
+              <div className="col-md-4 mb-4">
+                <div className="card bg-dark text-white">
+                  <div className="card-body">
+                    <h5 className="card-title">Project 1</h5>
+                    <p className="card-text">Description of Project 4.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="card bg-dark text-white">
+                  <div className="card-body">
+                    <h5 className="card-title">Project 2</h5>
+                    <p className="card-text">Description of Project 5.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="card bg-dark text-white">
+                  <div className="card-body">
+                    <h5 className="card-title">Project 3</h5>
+                    <p className="card-text">Description of Project 6.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section className="aboutme flex-grow-1 min-vh-100 bg-light text-dark py-5">
       <div className="container">
-        <h2 className="text-center mb-4">About Me</h2>
+        <h1>About Me</h1>
         <img src={myPhoto} className="portrait" alt="portrait" />
         <p className="text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
