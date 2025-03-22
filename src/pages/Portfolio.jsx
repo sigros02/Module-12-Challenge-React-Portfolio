@@ -1,16 +1,41 @@
-export default function Portfolio() {
+function Portfolio() {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
+    <section className="portfolio flex-grow-1 min-vh-100 bg-light text-dark py-5">
+      <div className="container">
+        <section className="portfolio bg-secondary text-white py-5">
+          <div className="container">
+            <h2 className="text-center mb-4">My Projects</h2>
+            <div className="row">
+              <div className="col-md-4 mb-4">
+                <div className="card bg-dark text-white">
+                  <div className="card-body">
+                    <h5 className="card-title">Project 1</h5>
+                    <p className="card-text">Description of Project 1.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="card bg-dark text-white">
+                  <div className="card-body">
+                    <h5 className="card-title">Project 2</h5>
+                    <p className="card-text">Description of Project 2.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="card bg-dark text-white">
+                  <div className="card-body">
+                    <h5 className="card-title">Project 3</h5>
+                    <p className="card-text">Description of Project 3.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
   );
 }
+
+export default Portfolio;

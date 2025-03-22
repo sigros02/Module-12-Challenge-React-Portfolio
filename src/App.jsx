@@ -1,13 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Navigation from "./components/Navigation.jsx";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
-
   return (
-    <>
-      <Navigation />
-        <Outlet />
-    </>
+    <div className="d-flex flex-column ">
+      <Header />
+      <main className="flex-grow-1 d-flex justify-content-center align-items-center">
+          <Outlet />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
