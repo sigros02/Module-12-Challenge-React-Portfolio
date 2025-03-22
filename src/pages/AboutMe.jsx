@@ -1,7 +1,11 @@
+import myPhoto from "/stuart-photo.jpg";
+// import "./App.css";
+
 export default function AboutMe() {
   return (
     <div>
       <h1>About Me</h1>
+      <img src={myPhoto} className="logo" alt="Vite logo" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
