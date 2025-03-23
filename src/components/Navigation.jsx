@@ -1,38 +1,29 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
 
 function Navigation() {
   const { pathname } = useLocation();
-  const [isCollapsed, setIsCollapsed] = useState(true);
 
-  const toggleNavbar = () => {
-    setIsCollapsed(!isCollapsed);
-  };
-
+  // SG: https://getbootstrap.com/docs/4.3/components/navbar/#responsive-behaviors (see toggler button)
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/"></Link>
         <button
           className="navbar-toggler"
           type="button"
-          onClick={toggleNavbar}
-          aria-controls="navbarNav"
-          aria-expanded={!isCollapsed}
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-hidden"
+          aria-controls="navbar-hidden"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div
-          className={`collapse navbar-collapse ${!isCollapsed ? "show" : ""}`}
-          id="navbarNav"
-        >
+        <div className="collapse navbar-collapse" id="navbar-hidden">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link
                 to="/"
                 className={`nav-link ${pathname === "/" ? "active" : ""}`}
-                onClick={() => setIsCollapsed(true)}
               >
                 About Me
               </Link>
@@ -43,7 +34,6 @@ function Navigation() {
                 className={`nav-link ${
                   pathname === "/Contact" ? "active" : ""
                 }`}
-                onClick={() => setIsCollapsed(true)}
               >
                 Contact Me
               </Link>
@@ -54,7 +44,6 @@ function Navigation() {
                 className={`nav-link ${
                   pathname === "/Portfolio" ? "active" : ""
                 }`}
-                onClick={() => setIsCollapsed(true)}
               >
                 Portfolio
               </Link>
@@ -63,7 +52,6 @@ function Navigation() {
               <Link
                 to="/Resume"
                 className={`nav-link ${pathname === "/Resume" ? "active" : ""}`}
-                onClick={() => setIsCollapsed(true)}
               >
                 Resume
               </Link>
