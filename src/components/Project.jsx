@@ -15,6 +15,8 @@ export default function Project() {
                 src={project.gifLink}
                 className="card-img-top"
                 alt={`Demo of ${project.title}`}
+                // make all cards same size
+                style={{ height: "200px", width: "100%" }}
               />
             </a>
             <div className="card-body">
@@ -36,4 +38,3 @@ export default function Project() {
     </div>
   );
 }
-console.log("Projects: ", projects);
