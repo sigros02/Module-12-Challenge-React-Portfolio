@@ -1,0 +1,16 @@
+:root {
+  /* CSS HEX */
+  --black: #000000ff;
+  --oxford-blue: #14213dff;
+  --orange-web: #fca311ff;
+  --platinum: #e5e5e5ff;
+  --white: #ffffffff;
+
+  /* CSS HSL */
+  --black: hsla(0, 0%, 0%, 1);
+  --oxford-blue: hsla(221, 51%, 16%, 1);
+  --orange-web: hsla(37, 98%, 53%, 1);
+  --platinum: hsla(0, 0%, 90%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+}
+
