@@ -2,7 +2,7 @@ import myPhoto from "/stuart-photo.jpg";
 
 export default function AboutMe() {
   return (
-    <section className="aboutme flex-grow-1 min-vh-100 bg-light text-dark py-5">
+    <section className="aboutme flex-grow-1 bg-light text-dark py-5 min-vh-100">
       <div className="container">
         <h1>About Me</h1>
         <img src={myPhoto} className="portrait" alt="portrait" />

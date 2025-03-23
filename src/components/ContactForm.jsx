@@ -4,6 +4,7 @@ export default function contactForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [formMessage, setFormMessage] = useState("");
 
   const handleInputChange = (formEvent) => {
     const { name, value } = formEvent.target;
@@ -70,6 +71,18 @@ export default function contactForm() {
           placeholder="email address"
           className="form-control"
         />
+      </div>
+      <div className="mb-3">
+        <label htmlFor="message" className="form-label">
+          Message:
+        </label>
+        <textarea
+          name="message"
+          value={formMessage}
+          onChange={handleInputChange}
+          placeholder="Enter your message here"
+          className="form-control"
+        ></textarea>
       </div>
       <button type="submit" className="btn btn-primary">
         Submit

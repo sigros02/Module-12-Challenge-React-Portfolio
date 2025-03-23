@@ -3,12 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 function Navigation() {
   const { pathname } = useLocation();
 
-  // SG: https://getbootstrap.com/docs/4.3/components/navbar/#responsive-behaviors (see toggler button)
+  // SG: https://getbootstrap.com/docs/4.3/components/navbar/#responsive-beha</nav>viors (see toggler button)
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <button
-          className="navbar-toggler"
+          className="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbar-hidden"
