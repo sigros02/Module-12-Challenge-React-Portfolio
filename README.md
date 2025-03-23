@@ -1,12 +1,49 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a React-based portfolio designed to showcase web development skills and projects. It's built as a single-page application (SPA) to provide a seamless user experience, allowing potential employers and collaborators to easily navigate through various sections like "About Me," "Portfolio," "Contact," and "Resume." This portfolio is deployed on Netlify, ensuring accessibility and a professional presentation.
 
-## Expanding the ESLint configuration
+## User Story
+As an employer looking for candidates with experience building single-page applications,
+I want to view a potential employee's deployed React portfolio of work samples
+so that I can assess whether they're a good candidate for an open position
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Acceptance Criteria
+
+* The application presents a header, content sections, and a footer.
+* The header includes the developer's name and navigation links: "About Me," "Portfolio," "Contact," and "Resume."
+* Navigation highlights the current section.
+* Clicking navigation links updates the displayed section without page reload.
+* "About Me" section is displayed by default.
+* "About Me" includes a photo/avatar and a bio.
+* "Portfolio" displays six project images with links to deployed applications and GitHub repositories.
+* "Contact" includes a form with name, email, and message fields, with validation.
+* "Resume" provides a link to a downloadable resume and a list of proficiencies.
+* The footer includes links to GitHub, LinkedIn, and a third platform (e.g., Stack Overflow, Twitter).
+
+## Demo
+
+![Portfolio Animation](./public/DEMO-GIF-Challenge12-REACT-Portfolio.gif)
+
+## Technologies Used
+
+* React
+* React Router DOM
+* Vite
+* CSS Bootstrap
+* JavaScript (ES6+)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Deployed Application
+
+[Netlify Deployment Link](https://end-to-end-by-stuart.netlify.app/)
+
+## GitHub Repository
+
+[GitHub Repository Link](https://github.com/sigros02/Module-12-Challenge-React-Portfolio)
