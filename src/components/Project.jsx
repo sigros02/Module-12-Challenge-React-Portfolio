@@ -1,4 +1,4 @@
-import { projects } from "../utils/Projects";
+import { projects } from "../data/Projects";
 
 export default function Project() {
   return (
